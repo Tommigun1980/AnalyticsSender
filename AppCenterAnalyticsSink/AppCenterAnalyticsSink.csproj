@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackOnBuild>true</PackOnBuild>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Authors>Tommi Kiviniemi</Authors>
+    <Description>DESCRIPTION HERE</Description>
+    <Copyright>Copyright © 2020</Copyright>
+    <Owners>Tommi Kiviniemi</Owners>
+    <Summary>SUMMARY HERE</Summary>
+    <PackageTags>Tags, Here</PackageTags>
+    <Title>AnalyticsSender.Sinks.AppCenterAnalyticsSink</Title>
+    <PackageId>AnalyticsSender.Sinks.AppCenterAnalyticsSink</PackageId>
+    <PackageProjectUrl>https://github.com/Tommigun1980/AnalyticsSender</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/Tommigun1980/AnalyticsSender/blob/master/LICENSE</PackageLicenseUrl>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType></DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="NuGet.Build.Packaging" Version="0.2.5-dev.8">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AppCenter.Analytics" Version="3.4.1" />
+    <PackageReference Include="Microsoft.AppCenter.Crashes" Version="3.4.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AnalyticsSender\AnalyticsSender.csproj" />
+  </ItemGroup>
+</Project>
