@@ -10,7 +10,7 @@ AnalyticsSender is a light-weight sink (plugin) based analytics sender.
 The base package contains the SDK and a logging sink, and an App Center analytics sink is available in a separate package.
 
 This package solves two problems:
-1) Often you want to send your analytics data to several destinations (local log, App Center, Google Analytics, Facebook Analytics etc.). AnalyticsSender's sink based API requires only one call to send the analytics event to all destinations.
+1) Often you want to send your analytics data to several destinations (local log, App Center, Google Analytics, Facebook Analytics etc.). AnalyticsSender's sink based API requires only one call to send analytics events to all destinations.
 
 2) The App Center SDK doesn't have support for custom properties. This package's App Center sink adds this missing functionality.
 
