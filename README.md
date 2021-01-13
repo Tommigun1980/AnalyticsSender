@@ -21,13 +21,13 @@ This package solves two problems:
 ```c#
 using AnalyticsSender;
 
+// add logging sink. optional.
+Analytics.AddSink(Sinks.LoggingSink());
+
 // add app center sink. optional.
 var appCenterSink = new Sinks.AppCenterSink();
 appCenterSink.TurnOnInstallIdSending(); // optional
 Analytics.AddSink(appCenterSink);
-
-// add logging sink. optional.
-Analytics.AddSink(Sinks.LoggingSink());
 
 // set user id - gets merged in with event properties. optional
 Analytics.SetUserId("whatever");
