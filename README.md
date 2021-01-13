@@ -12,7 +12,7 @@ The base package contains the SDK and a logging sink, and an App Center analytic
 This package solves two problems:
 1) Often you want to send your analytics data to several destinations (local log, App Center, Google Analytics, Facebook Analytics etc.). AnalyticsSender's sink based API requires only one call to send analytics events to all destinations.
 
-2) The App Center SDK doesn't have support for custom properties. This package's App Center sink adds this missing functionality.
+2) The App Center SDK doesn't have support for custom properties. This package's App Center sink adds this missing functionality. Also, any custom sink that  natively lacks this capability can be enhanced to support it, see the section [Extending](#Extending).
 
 ## Usage
 
